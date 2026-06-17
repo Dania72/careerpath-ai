@@ -64,6 +64,8 @@ CareerPath/
 │       └── groqAPI.js
 
 
+
+
 ### 4. **AI Prompt Engineering**
 Crafted prompts to consistently return structured JSON:
 ```javascript
@@ -109,8 +111,7 @@ Generate a learning roadmap as raw JSON only...
 
 
 
-
-## 🤖 How I Used AI (Claude)
+##  How I Used AI (Claude)
 
 ### Claude as Development Assistant
 - Used Claude (Anthropic's AI) through web interface
