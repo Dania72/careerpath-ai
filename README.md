@@ -47,7 +47,7 @@ CareerPath is an AI-powered web application that generates personalized learning
 - ✅ **Why Groq?** - Lightning fast responses (3-5 seconds vs 30+ seconds), generous free tier, and excellent JSON output
 
 ### 3. **Component Architecture**
-
+```
 CareerPath/
 ├── src/
 │   ├── components/
@@ -62,9 +62,7 @@ CareerPath/
 │   │   └── SavedRoadmaps.jsx
 │   └── services/
 │       └── groqAPI.js
-
-
-
+```
 
 ### 4. **AI Prompt Engineering**
 Crafted prompts to consistently return structured JSON:
@@ -78,7 +76,8 @@ Generate a learning roadmap as raw JSON only...
   "phases": [...],
   "milestones": [...]
 }
-
+`
+```
 
 ### 5. **User Experience Focus**
 - Clean, modern UI with purple/white color scheme
@@ -87,7 +86,7 @@ Generate a learning roadmap as raw JSON only...
 - Smooth animations and transitions
 - Mobile-responsive design
 
-
+---
 
 ##  Challenges & Blockers Faced
 
@@ -104,12 +103,13 @@ Generate a learning roadmap as raw JSON only...
 **Issue:** OpenRouter models were slow (30-60 seconds) or unavailable
 **Solution:** Groq API with `llama-3.3-70b-versatile` - consistent 3-5 second responses
 
+
 ### Challenge 4: **API Response Parsing**
 **Issue:** AI sometimes returned JSON with markdown formatting
 **Solution:** `const clean = text.replace(/```json|```/g, '').trim()`
 
 
-
+---
 
 ##  How I Used AI (Claude)
 
@@ -121,18 +121,19 @@ Generate a learning roadmap as raw JSON only...
 - Used Claude to debug errors and suggest fixes
 
 ### Example Prompts Used
-
+```
 "Create a React Home page component with Tailwind CSS that has:
 - A centered hero section with the title 'CareerPath'
 - An input box where users type their career goal
-
+- A 'Build My Roadmap' button"
+```
 
 ### AI for API Integration
 - Used Claude to write the Groq API service file
 - Crafted prompt structures to ensure JSON output
 - Debugged API errors with console logs and Claude's guidance
 
-
+---
 
 ##  Results
 
@@ -142,7 +143,7 @@ Generate a learning roadmap as raw JSON only...
 ✅ Professional UI with clean design
 ✅ Fully interactive and responsive
 
-
+---
 
 ##  Key Takeaways
 
@@ -154,7 +155,7 @@ Generate a learning roadmap as raw JSON only...
 6. **Debug systematically** - Console logs, API responses, one fix at a time
 7. **Adapt quickly** - When one API fails, move to the next
 
-
+---
 
 ##  Future Improvements
 
@@ -165,6 +166,7 @@ Generate a learning roadmap as raw JSON only...
 - [ ] Personalized readiness score based on current skills
 - [ ] Dark mode support
 
+---
 
 ##  How to Run
 
@@ -180,3 +182,6 @@ VITE_GROQ_API_KEY=your_key_here
 
 # Run the app
 npm run dev
+```
+
+---
